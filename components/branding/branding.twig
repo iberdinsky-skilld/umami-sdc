@@ -8,13 +8,13 @@
   {% if site_name %}
     <div class="branding__site-name">
       <a href="{{ url }}" rel="home">
-        {% block site_name %}{% endblock %}
+        {% block site_name %}{{ site_name }}{% endblock %}
       </a>
     </div>
   {% endif %}
   {% if site_slogan %}
     <div class="branding__site-slogan">
-      {% block site_slogan %}{% endblock %}
+      {% block site_slogan %}{{ site_slogan }}{% endblock %}
     </div>
   {% endif %}
 </div>

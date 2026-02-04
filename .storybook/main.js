@@ -13,6 +13,6 @@ const config = {
       },
     },
   ],
-  "framework": "@storybook/html-vite"
+  "framework": "@storybook/html-vite",
 };
 export default config;

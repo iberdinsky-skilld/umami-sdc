@@ -2,10 +2,10 @@
   <div class="container">
     <div class="banner__inner">
       <div class="banner__image">
-        {% block image %}{% endblock %}
+        {% block image %}{{ image }}{% endblock %}
       </div>
       <div class="banner__content">
-        {% block banner_content %}{% endblock %}
+        {% block banner_content %}{{ content }}{% endblock %}
       </div>
     </div>
   </div>

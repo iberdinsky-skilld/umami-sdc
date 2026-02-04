@@ -24,6 +24,8 @@ slots:
   disclaimer:
     type: string
     description: Disclaimer text
+    examples:
+      - This is a disclaimer. It can be used to display legal information, terms and conditions, or any other important notices to users. The content of the disclaimer should be clear and concise, providing necessary information without overwhelming the user.
   copyright:
     type: string
     description: Copyright text of Disclaimer

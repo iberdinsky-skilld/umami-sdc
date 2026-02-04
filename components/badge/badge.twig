@@ -6,8 +6,8 @@
       </div>
     {% endif %}
     {% if block('label') is defined and block('label')|trim %}
-      <div class="umami-badge__label">{% block label %}{% endblock %}</div>
+      <div class="umami-badge__label">{% block label %}{{ label }}{% endblock %}</div>
     {% endif %}
-    {% block text %}{% endblock %}
+    {% block text %}{{ text }}{% endblock %}
   </div>
 </div>

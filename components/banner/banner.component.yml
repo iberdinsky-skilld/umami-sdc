@@ -28,8 +28,12 @@ slots:
     title: Content
     # A description.
     description: This is the banner content
+    examples:
+      - Banner content
   image:
     # A human-readable name.
     title: Image
     # A description.
     description: This is the banner image
+    examples:
+      - <img src="https://placehold.co/600x400" alt="Random image">

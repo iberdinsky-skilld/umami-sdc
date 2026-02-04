@@ -37,6 +37,10 @@ slots:
   label:
     type: string
     description: Label text
+    examples:
+      - Label
   text:
     type: string
     description: Text
+    examples:
+      - Text

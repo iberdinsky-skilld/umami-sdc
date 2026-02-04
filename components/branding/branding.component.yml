@@ -25,13 +25,21 @@ props:
     site_logo:
       type: string
       format: iri-reference
+      examples:
+        - https://placehold.co/100x40
     url:
       type: string
       title: Branding url
       format: iri-reference
+      examples:
+        - https://www.drupal.org
 
 slots:
   site_name:
     type: string
+    examples:
+      - Site Name
   site_slogan:
     type: string
+    examples:
+      - Site Slogan

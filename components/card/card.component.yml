@@ -40,3 +40,7 @@ slots:
     title: Content
     required: true
     description: The card content.
+    examples:
+      - |
+        <h2>Card Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, sed efficitur ipsum.</p>

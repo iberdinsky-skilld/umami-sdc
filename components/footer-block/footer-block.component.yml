@@ -27,5 +27,11 @@ slots:
   # {% block content %}.
   content:
     title: Content
+    examples:
+      - |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, sed efficitur ipsum.</p>
   image:
     title: Image
+    examples:
+      - |
+        <img src="https://placehold.co/200x100" alt="Placeholder image">

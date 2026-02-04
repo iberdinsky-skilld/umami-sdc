@@ -22,11 +22,17 @@ props:
       type: string
       title: Read More url
       format: iri-reference
+      examples:
+        - https://www.drupal.org
 
 slots:
   a11y:
     type: string
     title: Read More screen reader text
+    examples:
+      - Read more about this topic
   text:
     type: string
     title: Read More text
+    examples:
+      - Read More

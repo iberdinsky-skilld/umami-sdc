@@ -1,8 +1,8 @@
 <div{{ attributes.addClass('disclaimer') }}>
   <div class="disclaimer__disclaimer">
-    {% block disclaimer %}{% endblock %}
+    {% block disclaimer %}{{ disclaimer }}{% endblock %}
   </div>
   <div class="disclaimer__copyright">
-    {% block copyright %}{% endblock %}
+    {% block copyright %}{{ copyright }}{% endblock %}
   </div>
 </div>
