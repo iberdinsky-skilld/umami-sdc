@@ -1,0 +1,29 @@
+{
+  "name": "umami",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iberdinsky-skilld/umami-sdc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iberdinsky-skilld/umami-sdc/issues"
+  },
+  "homepage": "https://github.com/iberdinsky-skilld/umami-sdc#readme",
+  "description": "",
+  "devDependencies": {
+    "storybook-addon-sdc": "^0.19.14",
+    "twig": "^1.17.1",
+    "twing": "^7.2.2",
+    "vite": "^6.4.1",
+    "storybook": "^10.2.6",
+    "@storybook/html-vite": "^10.2.6"
+  },
+  "type": "module"
+}
