@@ -7,9 +7,6 @@ name: Branding
 # Status can be: "experimental", "stable", "deprecated", "obsolete".
 status: experimental
 
-# Use this key to organize components together.
-group: Navigation
-
 # Schema for the props. We support www.json-schema.org. Learn more about the
 # syntax there.
 props:
