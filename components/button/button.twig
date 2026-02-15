@@ -1,0 +1,4 @@
+<a
+  {{ attributes|default(create_attribute()).addClass('button').addClass(modifier ? 'button--' ~ modifier : '') }}
+  href="{{ url }}"
+>{{ text }}</a>

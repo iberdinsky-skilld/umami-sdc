@@ -15,6 +15,12 @@ props:
     label:
       title: Label
       type: string
+      examples:
+        - 'Tags'
+    extra_classes:
+      type: array
+      items:
+        type: string
     title_attributes:
       type: Drupal\Core\Template\Attribute
       title: Title Attributes
@@ -57,3 +63,18 @@ thirdPartySettings:
       labelHidden:
         props:
           label_display: visually_hidden
+      linksGrid:
+        props:
+          extra_classes:
+            - tags--grid
+          label_display: visually_hidden
+          tags:
+            - content: <a href="#">Alcohol free</a>
+            - content: <a href="#">Cake</a>
+            - content: <a href="#">Dessert</a>
+            - content: <a href="#">Gluten free</a>
+            - content: <a href="#">Vegan</a>
+            - content: <a href="#">Quick & easy</a>
+            - content: <a href="#">Healthy</a>
+            - content: <a href="#">Travel</a>
+            - content: <a href="#">Quick & easy</a>

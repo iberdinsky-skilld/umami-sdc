@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 4%;
+  padding: .75rem 4vw;
+  background-color: #fff;
 }
 
 /* Medium */
@@ -11,14 +12,6 @@
   /* 768px */
   .umami-header {
     padding-top: 0;
-  }
-}
-
-/* Extra large + side margins */
-@media screen and (min-width: 80rem) {
-  /* 1200px (large) + 80px (side margins) = 1280px */
-  .umami-header {
-    padding: 0;
   }
 }
 

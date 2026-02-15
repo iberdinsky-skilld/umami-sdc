@@ -1,0 +1,36 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: Button
+
+status: experimental
+
+props:
+  type: object
+  properties:
+    modifier:
+      type: string
+      title: Button modifier
+      examples:
+        - primary
+        - secondary
+      default: ''
+    url:
+      type: iri-reference
+      title: Button URL
+      examples:
+        - https://example.com
+slots:
+  text:
+    type: string
+    title: Button text
+    examples:
+      - Click me
+
+thirdPartySettings:
+  sdcStorybook:
+    parameters:
+      layout: 'centered'
+    stories:
+      primary:
+        props:
+          modifier: 'primary'

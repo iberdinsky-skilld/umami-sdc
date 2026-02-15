@@ -49,3 +49,32 @@ libraryOverrides:
   dependencies:
     - core/drupal
     - core/once
+
+
+thirdPartySettings:
+  sdcStorybook:
+    disabledStories:
+      - basic
+    stories:
+      preview:
+        slots:
+          dropdown:
+            - type: component
+              component: 'umami:menu'
+              props:
+                items:
+                  - title: Home
+                    url: https://example.com
+                  - title: Articles
+                    url: https://example.com
+                  - title: Recipes
+                    url: https://example.com
+          logo:
+            - type: component
+              component: 'umami:branding'
+              props:
+                site_logo: https://placehold.co/64x64
+                url: https://example.com
+              slots:
+                site_name: ''
+                site_slogan: ''

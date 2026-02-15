@@ -1,0 +1,38 @@
+.button {
+  display: inline-block;
+  min-width: inherit;
+  max-width: inherit;
+  padding: 0.7rem 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #008068;
+  border-radius: 3px;
+  background-color: #008068;
+  font-family: "Scope One", Georgia, serif;
+  font-size: 1.2rem;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  transition: background-color 0.5s ease;
+  text-decoration: none;
+  color: #000;
+  background-color: #e6eee0;
+}
+
+.button--primary {
+  background-color: rgb(217, 55, 96);
+  border-color: rgb(217, 55, 96);
+}
+
+.button--primary:hover,
+.button--primary:active,
+.button--primary:focus {
+  outline-color: rgb(255, 255, 255);
+  outline-offset: 2px;
+  background-color: rgb(252, 236, 231);
+}

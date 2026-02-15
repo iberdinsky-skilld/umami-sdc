@@ -44,3 +44,68 @@ slots:
       - |
         <h2>Card Title</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, sed efficitur ipsum.</p>
+
+thirdPartySettings:
+  sdcStorybook:
+    parameters:
+      layout: 'centered'
+    stories:
+      preview:
+        slots:
+          content:
+            - type: component
+              component: 'umami:title'
+              props:
+                html_tag: h2
+                label: 'Give your oatmeal the ultimate makeover'
+                attributes:
+                  class: 'umami-card__title'
+            - type: component
+              component: 'umami:read-more'
+              props:
+                attributes:
+                  class: 'umami-card__read-more'
+            - type: image
+              uri: https://placehold.co/600x300
+              attributes:
+                class: 'umami-card__image'
+      alt:
+        slots:
+          content:
+            - type: image
+              uri: https://placehold.co/400x200
+              attributes:
+                class: 'umami-card__image'
+            - type: component
+              component: 'umami:title'
+              props:
+                html_tag: h2
+                label: 'Borscht with pork ribs'
+                attributes:
+                  class: 'umami-card__title'
+            - type: component
+              component: 'umami:read-more'
+              props:
+                attributes:
+                  class: 'umami-card__read-more'
+      withTags:
+        slots:
+          content:
+            - type: component
+              component: 'umami:title'
+              props:
+                html_tag: h2
+                label: 'Borscht with pork ribs'
+                attributes:
+                  class: 'umami-card__title'
+            - type: component
+              component: 'umami:tags'
+            - type: image
+              uri: https://placehold.co/400x200
+              attributes:
+                class: 'umami-card__image'
+            - type: component
+              component: 'umami:read-more'
+              props:
+                attributes:
+                  class: 'umami-card__read-more'

@@ -1,0 +1,44 @@
+.m-paragraph {
+  padding: 2.5rem 4vw;
+}
+
+.m-paragraph--gray {
+  background-color: #767775;
+  color: #fff;
+}
+
+.m-paragraph--dark-gray {
+  background-color: #5f635d;
+  color: #fff;
+}
+
+.m-paragraph--white {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (min-width: 64rem) {
+  .m-paragraph--grid {
+    --m-paragraph--grid: repeat(2, 1fr);
+  }
+
+  .m-paragraph--home-grid {
+    --m-paragraph--grid: 2fr 1fr 1fr;
+  }
+
+  .m-paragraph--badges {
+    --m-paragraph--grid: repeat(4, 1fr);
+  }
+}
+
+.m-paragraph__content {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: min-content;
+  grid-template-columns: var(--m-paragraph--grid);
+}
+
+.m-paragraph__title {
+  margin-block: 0 2rem;
+  text-align: center;
+}

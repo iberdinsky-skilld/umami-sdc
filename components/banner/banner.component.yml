@@ -37,3 +37,25 @@ slots:
     description: This is the banner image
     examples:
       - <img src="https://placehold.co/600x400" alt="Random image">
+
+thirdPartySettings:
+  sdcStorybook:
+    stories:
+      preview:
+        slots:
+          content:
+            - type: component
+              component: 'umami:title'
+              props:
+                html_tag: h2
+                label: 'Super easy vegetarian pasta bake'
+            - type: element
+              tag: 'p'
+              value: A wholesome pasta bake is the ultimate comfort food. This delicious bake is super quick to prepare and an ideal midweek meal for all the family.
+            - type: component
+              component: 'umami:button'
+              props:
+                label: 'View recipe'
+                modifier: 'primary'
+                url: '#'
+          image: <img src="https://placehold.co/1200x800" alt="Random image">

@@ -32,3 +32,25 @@
     content: ":";
   }
 }
+
+.tags--grid {
+  .tags__items {
+    width: 100%;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .tags__item {
+    font-weight: bold;
+
+    &:nth-last-child(n + 2)::after {
+      content: "";
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}

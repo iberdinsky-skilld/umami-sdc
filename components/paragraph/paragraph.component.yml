@@ -1,0 +1,97 @@
+# This is so your IDE knows about the syntax for fixes and autocomplete.
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+# The human readable name.
+name: Paragraph
+
+# Status can be: "experimental", "stable", "deprecated", "obsolete".
+status: stable
+
+# Schema for the props. We support www.json-schema.org. Learn more about the
+# syntax there.
+props:
+  type: object
+  properties:
+    extra_classes:
+      type: array
+      items:
+        type: string
+    label:
+      type: string
+      title: Title
+      examples:
+        - Paragraph title
+slots:
+  content:
+    title: Content
+    examples:
+      - Lorem ipsum dolor sit amet, euripidis voluptatum nam ex, ullum hendrerit pertinacia vim et. Ex habeo ponderum sapientem has, id vide utamur gloriatur cum. Per quas diceret cu. Ea mea noster ancillae, per et audiam impedit habemus, ad aperiam offendit persecuti qui. Ei consul copiosae eos. Ex sed quaeque senserit.
+
+thirdPartySettings:
+  sdcStorybook:
+    stories:
+      grid:
+        props:
+          label: Explore recipes across every type of occasion, ingredient, and skill level
+          extra_classes:
+            - m-paragraph--grid
+        slots:
+          content:
+            - type: component
+              component: 'umami:card'
+              story: Preview
+            - type: component
+              component: 'umami:card'
+              story: Preview
+            - type: component
+              component: 'umami:card'
+              story: Preview
+            - type: component
+              component: 'umami:card'
+              story: Preview
+      homeGrid:
+        props:
+          label: ''
+          extra_classes:
+            - m-paragraph--home-grid
+        slots:
+          content:
+            - type: component
+              component: 'umami:card'
+              story: Preview
+            - type: component
+              component: 'umami:card'
+              story: Alt
+            - type: component
+              component: 'umami:card'
+              story: Alt
+
+      tags:
+        props:
+          label: Recipe collections
+          extra_classes:
+            - m-paragraph--gray
+        slots:
+          content:
+            - type: component
+              component: 'umami:tags'
+              story: linksGrid
+      cta:
+        props:
+          label: ''
+          extra_classes:
+            - m-paragraph--dark-gray
+        slots:
+          content:
+            - type: component
+              component: 'umami:footer-block'
+              story: preview
+      withDisclaimer:
+        props:
+          label: ''
+          extra_classes:
+            - m-paragraph--white
+        slots:
+          content:
+            - type: component
+              component: 'umami:disclaimer'

@@ -1,0 +1,21 @@
+{%
+  set classes = [
+    'm-paragraph',
+    modifier,
+    extra_classes,
+
+  ]
+%}
+
+<div{{attributes.addClass(classes)}}>
+  {% if label %}
+    {% include 'umami:title' with {
+      attributes: create_attribute().addClass('m-paragraph__title'),
+      label: label,
+    } only %}
+  {% endif %}
+
+  <div class="m-paragraph__content">
+    {{ content }}
+  </div>
+</div>

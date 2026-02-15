@@ -1,0 +1,32 @@
+.menu__link {
+  display: inline-block;
+  transition: all 0.2s;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: solid 0.15em transparent;
+  background-color: inherit;
+  font-size: 1.266rem;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  list-style-type: none;
+  color: #000;
+  font-family: "Scope One", Georgia, serif;
+  font-size: 1.266rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 64rem) {
+  .menu__list {
+    display: flex;
+    gap: 2rem;
+  }
+}
